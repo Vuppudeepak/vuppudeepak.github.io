@@ -1,0 +1,25 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #169c9a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+section, main {
+  padding: 1rem;
+}
+[data-theme='dark'] {
+  background-color: #121212;
+  color: #e0e0e0;
+}
