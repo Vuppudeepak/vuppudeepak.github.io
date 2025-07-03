@@ -1,11 +1,11 @@
 
 :root {
-  --bg: #0f0f0f;
-  --text: #f0f0f0;
-  --accent: #ffffff;
+  --bg: #f5f7fa;
+  --text: #1a1a1a;
+  --accent: #00536d;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
   background-color: var(--bg);
   color: var(--text);
   font-family: 'Poppins', sans-serif;
@@ -32,8 +32,8 @@ header {
 }
 
 .profile-photo img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
@@ -41,7 +41,7 @@ header {
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
@@ -55,12 +55,17 @@ main {
 
 h2 {
   color: var(--accent);
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 0.3rem;
 }
 
+article h3 {
+  color: #00536d;
+  margin-top: 1.5rem;
+}
+
 ul {
-  list-style-type: disc;
+  list-style-type: square;
   padding-left: 1.5rem;
 }
 
@@ -68,5 +73,5 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
-  color: #aaa;
+  color: #777;
 }
