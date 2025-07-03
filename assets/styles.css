@@ -18,19 +18,26 @@ body {
 
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .profile-photo {
-  margin-bottom: 1rem;
+  margin-top: -60px;
 }
 
 .profile-photo img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
+  background-color: #fff;
 }
 
 nav a {
