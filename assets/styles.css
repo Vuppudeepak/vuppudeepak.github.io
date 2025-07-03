@@ -18,16 +18,16 @@ body {
 
 header {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .profile-photo {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .profile-photo img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
@@ -37,14 +37,24 @@ nav a {
   margin: 0 10px;
   color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
 }
 
 main {
   padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h2 {
   color: var(--accent);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 footer {
