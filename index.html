@@ -1,12 +1,25 @@
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Deepak Vuppu</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    });
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -19,6 +32,7 @@
     <h1>Dr. Deepak Vuppu</h1>
     <p>Healthcare Strategist | AI Enthusiast | ISB PGPMAX</p>
     <nav>
+      <button onclick="toggleTheme()">Toggle Theme</button>
       <a href="index.html">Home</a>
       <a href="#blogs">Blogs</a>
       <a href="#contact">Contact</a>
